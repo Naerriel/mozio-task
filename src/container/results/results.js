@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import './results.scss';
 import { getDistance } from '../../repository/distance'
 
-class Results extends Component {
+export default class Results extends Component {
   constructor(props) {
     super(props);
 
@@ -44,5 +43,3 @@ class Results extends Component {
     );
   }
 }
-
-export default connect()(Results);

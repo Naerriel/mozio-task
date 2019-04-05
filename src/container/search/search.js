@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import './search.scss';
 import { AutoCompleteInput } from '../../components/auto-complete-input/auto-complete-input'
 import { getLocations, saveLocation } from '../../repository/auto-completions'
 
-class Search extends Component {
+export default class Search extends Component {
   constructor(props) {
     super(props);
 
@@ -59,4 +58,3 @@ class Search extends Component {
   }
 }
 
-export default connect()(Search);
