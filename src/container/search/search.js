@@ -52,7 +52,7 @@ class Search extends Component {
             Number of people:
             <input type='number' value={this.state.people} onChange={(event) => this.handleChange('people', event.target.value)}/>
           </label>
-          <button type='button' onClick={this.redirect}>Search</button>
+          <button className='btn' type='button' onClick={this.redirect}>Search</button>
         </form>
       </main>
     );

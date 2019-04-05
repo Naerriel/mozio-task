@@ -11,7 +11,7 @@ class Results extends Component {
 
     const { from, to } = props.match.params;
     this.loadDistance(from, to);
-    this.state = {redirect: false, distance: ''};
+    this.state = {redirect: false, distance: null};
   }
 
   redirect = () => {
@@ -36,10 +36,10 @@ class Results extends Component {
         <h2>Trip summary:</h2>
         <p>From: {from}</p>
         <p>To: {to}</p>
-        <p>Distance: {this.state.distance}</p>
+        <p>Distance: {this.state.distance || '...'}</p>
         <p>Date: {date}</p>
         <p>People: {people}</p>
-        <button onClick={this.redirect}>Search again</button>
+        <button className='btn' onClick={this.redirect}>Search again</button>
       </main>
     );
   }

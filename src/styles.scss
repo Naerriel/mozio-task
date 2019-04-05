@@ -7,3 +7,13 @@ $color-black: #000000;
 $input-padding: 5px 10px;
 $input-width: 180px;
 $input-height: 30px;
+
+.btn {
+  padding: $input-padding;
+  border: 1px solid $color-steel;
+  background-color: $color-snow-white;
+
+  &:hover {
+    background-color: $color-silver;
+  }
+}
