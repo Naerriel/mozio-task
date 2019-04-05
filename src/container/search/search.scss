@@ -1,0 +1,23 @@
+@import '../../styles';
+
+.searching-page {
+  max-width: 768px;
+  margin: auto;
+  //border: 1px solid red;
+  text-align: left;
+
+  .input-wrapper {
+    margin: 10px 0;
+    display: block;
+
+    input {
+      margin-left: 10px;
+      border: 1px solid $color-steel;
+      padding: $input-padding;
+      font-size: 16px;
+      width: $input-width;
+      height: $input-height;
+    }
+  }
+}
+

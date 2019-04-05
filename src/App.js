@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import './App.scss';
+import { RouterComponent } from './container/router'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header>
-          Mozio Recruitment Task
-        </header>
+      <div className='app'>
+        <div className='container'>
+          <h1>
+            Mozio Recruitment Task
+          </h1>
+          <RouterComponent/>
+        </div>
       </div>
     );
   }

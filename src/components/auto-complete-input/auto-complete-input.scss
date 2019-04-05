@@ -1,0 +1,34 @@
+@import '../../styles';
+
+.auto-complete {
+  display: inline-block;
+  position: relative;
+  margin-right: 40px;
+
+  &-input {
+    margin-left: 10px;
+    border-color: $color-steel;
+    font-size: 16px;
+  }
+
+  &-dropdown {
+    background-color: $color-white;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    margin-top: -1px;
+    width: $input-width;
+  }
+
+  &-option {
+    width: 100%;
+    margin-top: -1px;
+    border: 1px solid $color-steel;
+    height: $input-height;
+    padding: $input-padding;
+  }
+
+  .active {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
